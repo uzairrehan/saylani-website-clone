@@ -109,7 +109,7 @@ li button{
     .hero-image img{
         width: 300px;
     } 
-   
+}  
 @media screen and (max-width:600px){
     .hero-image img{
         display: none;
