@@ -1,22 +1,24 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>saylani welfare trust</title>
+    <title>Saylani Welfare Trust</title>
     <link rel="shortcut icon" href="Images/images.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- navbar started -->
     <div class="contacts">
-      <div>info @saylaniwelfare.com &nbsp;&nbsp;&nbsp; 021-111-729-525</div>
-      <div><button>English</button></div>
+      <div>info@saylaniwelfare.com &nbsp;&nbsp;&nbsp; 021-111-729-525</div>
+      <div><button id="lang-switch">English</button></div>
     </div>
     <div class="navbar">
       <div>
         <img src="Images/logo.png" alt="logo" id="NavLogo" />
-        <ul>
+        <div id="hamburger" class="hamburger">&#9776;</div>
+        <ul id="nav-links">
           <li id="Blue">Home</li>
           <li>About</li>
           <li>Services</li>
@@ -24,12 +26,11 @@
           <li>Contact Us</li>
           <li>Bank Details</li>
           <li>Overseas Donors</li>
-          <li><button id="green">Donate Now</button></li>
-          <li><button id="blue">Be A Sponsor</button></li>
+          <li><button id="donateBtn">Donate Now</button></li>
+          <li><button id="sponsorBtn">Be A Sponsor</button></li>
         </ul>
       </div>
     </div>
-
     <!-- navbar ended -->
     <!-- first section started -->
     <div class="hero-section">
@@ -43,7 +44,7 @@
           communities to assess how best to support underprivileged families in
           more than 63 areas of day to day lives.
         </p>
-        <button>Explore More -></button>
+        <button id="exploreBtn">Explore More -></button>
       </div>
       <div class="hero-image">
         <img src="Images/38.png" alt="hero-image" />
@@ -154,5 +155,7 @@
       </div>
     </div>
     <!-- third section ended -->
+
+    <script src="app.js"></script>
   </body>
 </html>
