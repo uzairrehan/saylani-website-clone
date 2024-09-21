@@ -4,6 +4,15 @@
   box-sizing: border-box;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+body {
+  scroll-behavior: smooth;
+}
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 #NavLogo {
   width: 200px;
   margin-right: 50px;
@@ -170,8 +179,84 @@ li button {
   margin: 50px auto;
   gap: 40px;
 }
+.footer{
+    background-image: url("Images/upcoming_background.a669f19ea2aee3c7e10f.png") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color:#424242;
+}
+.part-1 {
+    width: 250px;
+}
+.part-1 img{
+    width: 35px;
+    margin:5px ;
+
+}
+#footer-logo{
+    width: 250px;
+
+}
+.whatsapp{
+    background-color: #008000;
+}
+
+.footer-content{
+    width: 90%;
+    margin: auto;
+    color: #ffffff;
+}
+.footer ul{
+    list-style: none;
+    font-weight: bold;
+}
+.footer ul li{
+    margin-top: 5px;
+}
+.section-2 img{
+    width: 180px;
+}
+.section-1{
+    padding: 50px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.section-2 ,.section-3,.section-4{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 900px) {
+    .navbar ul {
+    flex-direction: column;
+  }
+  .hero-section {
+    flex-direction: column;
+  }
+  .hero-image img {
+    width: 300px;
+  }
   .navbar ul {
     display: flex;
     flex-direction: column;
@@ -197,15 +282,210 @@ li button {
   .hero-image img {
     width: 300px;
   }
-}
-@media screen and (max-width: 600px) {
+  .section-1 ,.part-1 ,.part-2, .part-3, .part-4 {
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-1 li, h3 {
+    font-weight: 2em;
+    margin: 5px;
+    text-align: center;
+  }
+  .navbar {
+    position: relative;
+  }
+
+  /* Show the hamburger icon */
+  .hamburger {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .navbar ul li {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .navbar ul li button {
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  /* Navbar Visible on Mobile Toggle */
+  .navbar ul.show {
+    display: flex;
+  }
+
   .hero-image img {
     display: none;
   }
   #NavLogo {
-    display: none;
+    width:150px;
   }
   .contacts div button {
     display: none;
   }
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .navbar ul li {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .navbar ul li button {
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  /* Show the hamburger icon */
+  .hamburger {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+.navbar ul.show {
+  display: flex;
+}
+
+
+
+.hamburger:hover {
+  color: #8dc63f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navbar Styling */
+#NavLogo {
+  width: 200px;
+  margin-right: 50px;
+  transition: all 0.3s ease;
+}
+#NavLogo:hover {
+  transform: scale(1.05);
+}
+
+.navbar div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+.navbar ul li {
+  margin-left: 15px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.navbar ul li:hover {
+  background-color: #f0f0f0;
+  border-bottom: 2px solid #8dc63f;
+}
+
+li button {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+li button:hover {
+  background-color: #8dc63f;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+.hero-image img {
+  width: 400px;
+  transition: all 0.3s ease;
+}
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+.hero-text button {
+  padding: 10px 20px;
+  background-color: #8dc63f;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.hero-text button:hover {
+  background-color: #0066b3;
+}
+
+.boxes {
+  transition: all 0.3s ease;
+}
+.boxes:hover {
+  transform: translateY(-10px);
+}
+
+/* Add responsiveness */
+@media screen and (max-width: 900px) {
+
 }
